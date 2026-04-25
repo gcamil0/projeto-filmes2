@@ -4,11 +4,11 @@ import { Filme } from '../filmes/filmes.entity';
 @Entity('estilos')
 export class Estilo {
   @PrimaryGeneratedColumn()
-  estilo: number;
+  estilo!: number;
 
   @Column()
-  nome: string;
+  nome!: string;
 
   @OneToMany(() => Filme, (filme) => filme.estiloRel)
-  filmes: Filme[];
+  filmes!: Filme[];
 }

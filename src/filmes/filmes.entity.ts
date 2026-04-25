@@ -4,30 +4,30 @@ import { Estilo } from '../estilos/estilos.entity';
 @Entity('filmes')
 export class Filme {
   @PrimaryGeneratedColumn()
-  filme: number;
+  filme!: number;
 
   @Column()
-  estilo: number;
+  estilo!: number;
 
   @ManyToOne(() => Estilo, (estilo) => estilo.filmes)
   @JoinColumn({ name: 'estilo' })
-  estiloRel: Estilo;
+  estiloRel!: Estilo;
 
   @Column()
-  nome: string;
+  nome!: string;
 
   @Column()
-  ano: string;
+  ano!: string;
 
   @Column()
-  duracao: string;
+  duracao!: string;
 
   @Column()
-  foto: string;
+  foto!: string;
 
   @Column({ nullable: true })
-  sinopse: string;
+  sinopse!: string;
 
   @Column({ nullable: true })
-  video: string;
+  video!: string;
 }
