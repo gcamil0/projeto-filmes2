@@ -6,6 +6,7 @@ import { FilmesModule } from './filmes/filmes.module';
 import { AuthModule } from './auth/auth.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
 
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
